@@ -1,0 +1,66 @@
+@media (max-width: 1400px) {
+  .about-fond__left {
+    font-size: 62px;
+  }
+  .proects__item-title {
+    font-size: 40px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .proects__item-title {
+    font-size: 30px;
+  }
+  .footer__title img {
+    width: 470px;
+  }
+  .header__logo-title img {
+    width: 470px;
+  }
+  .about-fond__left {
+    font-size: 60px;
+  }
+}
+
+@media (max-width: 992px) {
+  .proects__item-title {
+    font-size: 23px;
+  }
+  .header__text {
+    max-width: 190px;
+  }
+  .footer__social img {
+    height: 20px;
+  }
+  .media__item {
+    max-width: 240px;
+  }
+  .news__item-title {
+    font-size: 17px;
+  }
+  .news__item-text {
+    font-size: 14px;
+  }
+  .footer__title img {
+    width: 370px;
+  }
+  .about__title,
+  .proects__title {
+    font-size: 50px;
+  }
+  .about-fond__right {
+    font-size: 20px;
+  }
+  .header__logo-title img {
+    width: 270px;
+  }
+  .about-fond__left {
+    font-size: 48px;
+  }
+  .container {
+    max-width: 980px;
+  }
+  .header__text {
+    font-size: 18px;
+  }
+}
