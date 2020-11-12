@@ -16,7 +16,9 @@ get_header(); ?>
 	<div class="container">
 		<div class="about__title"><?php the_field("title01", 8); ?></div>
 		<div class="about__item">
-			<p><?php the_field("text01", 8); ?></p>
+			<a href="<?php the_field("abautEstetik", 8); ?>">
+				<p><?php the_field("text01", 8); ?></p>
+			</a>
 		</div>
 	</div>
 	<div class="about__img"></div>
@@ -28,19 +30,19 @@ get_header(); ?>
 		<div class="proects__items">
 			<div class="proects__item">
 				<div class="proects__item-title"><?php the_field("ptitle01", 8); ?></div>
-				<img src="<?php the_field("pimg01", 8); ?>" alt="">
+				<a href="<?php the_field("plink_1", 8); ?>"><img src="<?php the_field("pimg01", 8); ?>" alt=""></a>
 			</div>
 			<div class="proects__item">
 				<div class="proects__item-title"><?php the_field("ptitle02", 8); ?></div>
-				<img src="<?php the_field("pimg02", 8); ?>" alt="">
+				<a href="<?php the_field("plink_2", 8); ?>"><img src="<?php the_field("pimg02", 8); ?>" alt=""></a>
 			</div>
 			<div class="proects__item">
 				<div class="proects__item-title"><?php the_field("ptitle03", 8); ?></div>
-				<img src="<?php the_field("pimg03", 8); ?>" alt="">
+				<a href="<?php the_field("plink_3", 8); ?>"><img src="<?php the_field("pimg03", 8); ?>" alt=""></a>
 			</div>
 			<div class="proects__item">
 				<div class="proects__item-title"><?php the_field("ptitle04", 8); ?></div>
-				<img src="<?php the_field("pimg04", 8); ?>" alt="">
+				<a href="<?php the_field("plink_4", 8); ?>"><img src="<?php the_field("pimg04", 8); ?>" alt=""></a>
 			</div>
 		</div>
 	</div>

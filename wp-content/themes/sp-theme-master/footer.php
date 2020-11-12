@@ -31,7 +31,7 @@
    <div class="footer__blok">
       <div class="container">
          <div class="footer__row">
-            <div class="footer__logo"><img src="<?php echo teo_get_image('footer-logo.png') ?>" alt=""></div>
+            <div class="footer__logo"><a href="../"><img src="<?php echo teo_get_image('footer-logo.png') ?>" alt=""></a></div>
             <div class="footer__title"><img src="<?php echo teo_get_image('footer-title.png') ?>" alt=""></div>
             <div class="footer__social">
                <a href="<?php the_field("fb", 8); ?>" target="blanc"><img src="<?php echo teo_get_image('soc-fb.svg') ?>" alt=""></a>

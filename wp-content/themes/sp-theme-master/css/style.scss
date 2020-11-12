@@ -60,6 +60,9 @@ body {
    line-height: normal;
    background-color: #fff;
 }
+p {
+   line-height: 38px;
+}
 nav a {
    color: #4f4f51;
    &:hover {
@@ -67,7 +70,7 @@ nav a {
    }
 }
 .current-menu-item a {
-   border-bottom: 2px solid #4f4f51;
+   font-weight: 600;
 }
 
 .container {
@@ -100,6 +103,21 @@ nav a {
       color: $color_b48;
    }
 }
+.fix {
+   position: fixed;
+   z-index: 100;
+   top: 0;
+   width: 100%;
+   text-align: center;
+   background-image: url("../img/m-menu-bg.svg");
+   background-position: center bottom;
+   background-repeat: no-repeat;
+   background-size: cover;
+
+   & ul {
+      text-align: center;
+   }
+}
 
 .main-menu {
    position: relative;
@@ -128,7 +146,7 @@ nav a {
    margin-top: -56px;
    display: flex;
    align-items: flex-end;
-   background-image: url("../img/intro-img.png");
+   //background-image: url("../img/intro-img.png");
    background-position: center top;
    background-repeat: no-repeat;
    background-size: cover;
@@ -145,7 +163,7 @@ nav a {
    &__bottom {
       position: absolute;
       bottom: 0;
-      z-index: 3;
+      // z-index: 3;
       width: 100%;
       height: 160px;
       background-image: url("../img/intro-bottom.svg");
@@ -173,6 +191,9 @@ nav a {
       margin-right: 100px;
       display: flex;
       justify-content: flex-end;
+      & a {
+         color: $color_f0d;
+      }
    }
    &__item p {
       margin-top: 40px;
@@ -185,13 +206,13 @@ nav a {
       background-image: url("../img/about-img.png");
       background-position: center top;
       background-repeat: no-repeat;
-      background-size: cover;
+      //background-size: cover;
    }
 
    &__bg {
       position: absolute;
       bottom: 0;
-      z-index: 3;
+      //z-index: 3;
       width: 100%;
       height: 160px;
       background-image: url("../img/about-bg.svg");
@@ -261,7 +282,7 @@ nav a {
    &__bg {
       position: absolute;
       bottom: 0;
-      z-index: 3;
+      //z-index: 3;
       width: 100%;
       height: 160px;
       background-image: url("../img/about-fond-bg.svg");
@@ -318,7 +339,7 @@ nav a {
    &__bg {
       position: absolute;
       bottom: 0;
-      z-index: 3;
+      //z-index: 3;
       width: 100%;
       height: 160px;
       background-image: url("../img/news-bg.svg");
