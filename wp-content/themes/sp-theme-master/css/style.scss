@@ -116,6 +116,7 @@ nav a {
    }
 
    &__logo-title {
+      margin-left: 50px;
    }
 
    &__text {
@@ -501,6 +502,7 @@ nav a {
    &__title {
       & img {
          width: 450px;
+         margin-left: 100px;
       }
    }
 
@@ -537,3 +539,4 @@ nav a {
       margin-top: 75px;
    }
 }
+//@import "_style";

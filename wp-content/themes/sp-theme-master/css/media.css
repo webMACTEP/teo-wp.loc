@@ -63,4 +63,10 @@
   .header__text {
     font-size: 18px;
   }
+  .footer__title img {
+    margin-left: 60px;
+  }
+  .header__logo-title {
+    margin-left: 10px;
+  }
 }

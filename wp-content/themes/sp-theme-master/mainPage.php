@@ -6,7 +6,7 @@ Template Name: Шаблон для главной
 get_header(); ?>
 
 <section class="intro">
-	<video data-src="<?php echo teo_get_image('rolik5.webm') ?>" class="resize-element" autoplay loop muted playsinline width="100%" height="100%">
+	<video autoplay loop muted playsinline width="100%" height="100%">
 		<source src="<?php echo teo_get_image('rolik5.mp4') ?>" type="video/mp4">
 		<source src="<?php echo teo_get_image('rolik5.webm') ?>" type="video/webm">
 	</video>
@@ -61,6 +61,7 @@ get_header(); ?>
 	<div class="container">
 		<div class="news__title"><a href="../news/"><?php the_field("newsTitle", 8); ?></a></div>
 		<div class="news__blok">
+			<!-- WP Content -->
 			<?php
 			$sp_obj = new SpClass();
 
@@ -74,28 +75,16 @@ get_header(); ?>
 					</div>
 
 				</div>
-
+				<!-- End WP Content -->
 			<?php endwhile; ?>
 
 			<div class="news__item">
-				<!-- <a href="<?php the_field("nLink01", 8); ?>">
-					<div class="news__item-title"><?php the_field("nTitle01", 8); ?></div>
-					<div class="news__item-text"><?php the_field("nText01", 8); ?></div>
-				</a> -->
 				<div class="news__item-img"><img src="<?php the_field("nImg01", 8); ?>" alt=""></div>
 			</div>
 			<div class="news__item">
-				<!-- <a href="<?php the_field("nLink02", 8); ?>">
-					<div class="news__item-title"><?php the_field("nTitle02", 8); ?></div>
-					<div class="news__item-text"><?php the_field("nText02", 8); ?></div>
-				</a> -->
 				<div class="news__item-img"><img src="<?php the_field("nImg02", 8); ?>" alt=""></div>
 			</div>
 			<div class="news__item">
-				<!-- <a href="<?php the_field("nLink03", 8); ?>">
-					<div class="news__item-title"><?php the_field("nTitle03", 8); ?></div>
-					<div class="news__item-text"><?php the_field("nText03", 8); ?></div>
-				</a> -->
 				<div class="news__item-img"><img src="<?php the_field("nImg03", 8); ?>" alt=""></div>
 			</div>
 		</div>

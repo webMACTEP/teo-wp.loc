@@ -188,6 +188,10 @@ nav a:hover {
   z-index: 10;
 }
 
+.header__logo-title {
+  margin-left: 50px;
+}
+
 .header__text {
   text-transform: uppercase;
   max-width: 240px;
@@ -625,6 +629,7 @@ nav a:hover {
 
 .footer__title img {
   width: 450px;
+  margin-left: 100px;
 }
 
 .footer__social {
