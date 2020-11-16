@@ -4,6 +4,9 @@
    top: 0;
    left: 0;
    z-index: 50;
+   &__title img {
+      z-index: 10;
+   }
    &::before {
       content: "";
       position: absolute;
@@ -11,7 +14,7 @@
       left: 0;
       width: 100%;
       height: 100%;
-      background-color: #333;
+      background-color: #fff;
       z-index: 2;
    }
    &__body {
@@ -38,9 +41,6 @@
       display: none;
    }
 
-   &__menu {
-   }
-
    &__list {
       display: flex;
       position: relative;
@@ -52,7 +52,7 @@
    }
 
    &__link {
-      color: #fff;
+      // color: #fff;
       text-transform: uppercase;
       font-size: 18px;
       text-decoration: none;
@@ -100,7 +100,7 @@
       width: 60%;
       height: 100%;
       overflow: auto;
-      background-color: rgb(49, 134, 57);
+      background-color: #f0f0f0;
       padding: 70px 10px 0 10px;
       transition: all 0.3s ease 0s;
 
@@ -118,7 +118,7 @@
 
       & span {
          position: absolute;
-         background-color: #fff;
+         background-color: #333;
          left: 0;
          width: 100%;
          height: 2px;
@@ -128,7 +128,7 @@
       &::before,
       &::after {
          content: "";
-         background-color: #fff;
+         background-color: #333;
          position: absolute;
          width: 100%;
          height: 2px;

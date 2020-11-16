@@ -14,7 +14,7 @@
   .footer__title img {
     width: 470px;
   }
-  .header__logo-title img {
+  .header-dt__logo-title img {
     width: 470px;
   }
   .about-fond__left {
@@ -51,7 +51,7 @@
   .about-fond__right {
     font-size: 20px;
   }
-  .header__logo-title img {
+  .header-dt__logo-title img {
     width: 270px;
   }
   .about-fond__left {
@@ -68,5 +68,19 @@
   }
   .header__logo-title {
     margin-left: 10px;
+  }
+}
+
+.header {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .header {
+    display: block;
+  }
+  .header-dt,
+  .main-menu {
+    display: none;
   }
 }

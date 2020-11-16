@@ -13,7 +13,7 @@
    .footer__title img {
       width: 470px;
    }
-   .header {
+   .header-dt {
       &__logo-title img {
          width: 470px;
       }
@@ -55,7 +55,7 @@
    .about-fond__right {
       font-size: 20px;
    }
-   .header {
+   .header-dt {
       &__logo-title img {
          width: 270px;
       }
@@ -76,7 +76,18 @@
       margin-left: 10px;
    }
 }
+.header {
+   display: none;
+}
 @media (max-width: 768px) {
+   .header {
+      display: block;
+   }
+
+   .header-dt,
+   .main-menu {
+      display: none;
+   }
 }
 @media (max-width: 576px) {
 }

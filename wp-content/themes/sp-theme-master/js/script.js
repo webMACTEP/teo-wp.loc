@@ -1,10 +1,10 @@
-jQuery(document).ready(function($) {
-	
+jQuery(document).ready(function ($) {
+
 	//WOW
 	new WOW().init();
 
 	//swiper slider
-	if($('.swiper-slide').length>1){
+	if ($('.swiper-slide').length > 1) {
 		var swiper = new Swiper('.swiper-container', {
 			navigation: {
 				nextEl: '.swiper-button-next',
@@ -12,23 +12,32 @@ jQuery(document).ready(function($) {
 			},
 			loop: true,
 			autoplay: {
-		        delay: 5000,
-		        disableOnInteraction: false,
-		    },
-		    simulateTouch: true,
+				delay: 5000,
+				disableOnInteraction: false,
+			},
+			simulateTouch: true,
 		});
 	} else {
 		$('.swiper-button-next').css('display', 'none');
 		$('.swiper-button-prev').css('display', 'none');
 	}
-	
-    //lazyload
-    $(window).scroll(function () { 
-    	$(".sp_lazyload").lazyload();
-    });
 
-    $(window).mousemove(function(){
-    	$(".sp_lazyload").lazyload();
-   	});
+	//lazyload
+	$(window).scroll(function () {
+		$(".sp_lazyload").lazyload();
+	});
 
-});	
+	$(window).mousemove(function () {
+		$(".sp_lazyload").lazyload();
+	});
+
+	$(document).ready(function () {
+		$('.header__burger').click(function (event) {
+			$('.header__burger, .header__menu').toggleClass('active');
+			$('body').toggleClass('lock');
+
+		});
+	});
+
+});
+
