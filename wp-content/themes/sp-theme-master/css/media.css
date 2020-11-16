@@ -229,7 +229,7 @@
     max-width: 100%;
   }
   .news {
-    height: 100%;
+    height: 110%;
   }
   .about__img {
     height: 60%;
@@ -277,5 +277,37 @@
   }
   .footer__title img {
     max-width: 310px;
+  }
+  .intro {
+    height: 540px;
+    margin-top: 50px;
+  }
+  .about__title {
+    padding-top: 0;
+  }
+}
+
+@media (max-width: 413px) {
+  .header__title img {
+    width: 200px;
+  }
+  .about__title,
+  .proects__title,
+  .about-fond__left,
+  .news__title,
+  .media__title {
+    font-size: 37px;
+  }
+  .footer__title img {
+    max-width: 241px;
+  }
+  .media__player iframe {
+    width: 300px;
+  }
+  .about-fond {
+    height: 780px;
+  }
+  .news {
+    height: 1160px;
   }
 }
