@@ -6,9 +6,10 @@ Template Name: Шаблон для главной
 get_header(); ?>
 
 <section class="intro">
-	<video autoplay="autoplay" loop muted playsinline width="100%" height="100%">
+	<video autoplay loop muted playsinline width="100%" height="100%">
 		<source src="<?php echo teo_get_image('rolik5.mp4') ?>" type="video/mp4">
 		<source src="<?php echo teo_get_image('rolik5.webm') ?>" type="video/webm">
+		Тег video не поддерживается вашим браузером.
 	</video>
 	<div class="intro__bottom"></div>
 </section>

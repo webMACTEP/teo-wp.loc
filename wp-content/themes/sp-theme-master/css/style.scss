@@ -68,6 +68,24 @@ body {
       }
    }
 }
+.page {
+   padding: 50px 0px 50px 0px;
+   & ul li {
+      list-style-type: disc;
+      list-style-position: inside;
+   }
+   & ol li {
+      list-style-position: inside;
+   }
+   & li {
+      padding: 10px 0px 10px 0px;
+   }
+   & blockquote {
+      font-style: italic;
+      font-size: 20px;
+      color: rgb(80, 80, 80);
+   }
+}
 p {
    line-height: 38px;
 }
@@ -141,7 +159,12 @@ nav a {
       text-align: center;
    }
 }
-
+.footer__nav {
+   & ul li {
+      list-style-type: none;
+      padding: 0;
+   }
+}
 .main-menu {
    position: relative;
    z-index: 1;
@@ -150,6 +173,10 @@ nav a {
    background-position: center bottom;
    background-repeat: no-repeat;
    background-size: cover;
+   & ul li {
+      list-style-type: none;
+      padding: 0;
+   }
 
    & li {
       text-transform: uppercase;
@@ -317,7 +344,7 @@ nav a {
 
    &__item-title {
       text-transform: uppercase;
-      font-size: $sz_44;
+      font-size: 38px;
       color: $color_f0d;
       font-weight: 100;
       margin-bottom: 40px;
@@ -336,7 +363,7 @@ nav a {
       width: 50%;
       text-transform: uppercase;
       text-align: right;
-      font-size: $sz_71;
+      font-size: 60px;
       font-weight: 300;
       color: $color_baa;
       padding: 20px;
@@ -606,11 +633,6 @@ nav a {
       font-size: 18px;
       text-decoration: none;
    }
-}
-.container {
-   max-width: 1180px;
-   margin: 0 auto;
-   padding: 0 10px;
 }
 .content {
    padding: 100px 0 0 0;

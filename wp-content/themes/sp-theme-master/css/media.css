@@ -174,7 +174,7 @@
             transform: scale(0);
   }
   .about-fond {
-    height: 60%;
+    height: 80%;
   }
   .about-fond__row {
     -webkit-box-pack: center;
@@ -195,7 +195,7 @@
     text-align: center;
   }
   .container {
-    max-width: 760px;
+    width: 95%;
     text-align: center;
   }
   .footer__row {
@@ -229,7 +229,7 @@
     max-width: 100%;
   }
   .news {
-    height: 110%;
+    height: 1120px;
   }
   .about__img {
     height: 60%;
@@ -250,8 +250,8 @@
 }
 
 @media (max-width: 576px) {
-  .container {
-    max-width: 540px;
+  .page {
+    padding: 0px 0px 0px 0px;
   }
   .media__title {
     font-size: 41px;
