@@ -165,9 +165,10 @@ nav a {
       padding: 0;
    }
 }
+
 .main-menu {
    position: relative;
-   z-index: 1;
+   z-index: 3;
    height: 56px;
    background-image: url("../img/m-menu-bg.svg");
    background-position: center bottom;

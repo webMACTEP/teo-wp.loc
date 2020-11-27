@@ -125,6 +125,9 @@
   .header__menu.active {
     left: 0;
   }
+  .header__menu ul li {
+    list-style-type: none;
+  }
   .header__burger {
     display: block;
     position: relative;
@@ -250,6 +253,11 @@
 }
 
 @media (max-width: 576px) {
+  .content h1 {
+    font-size: 38px;
+    margin-bottom: -45px;
+    margin-top: 50px;
+  }
   .page {
     padding: 0px 0px 0px 0px;
   }
@@ -257,7 +265,7 @@
     font-size: 41px;
   }
   .news {
-    height: 1080px;
+    height: 890px;
   }
   .media__row {
     padding: 0px;
@@ -267,6 +275,10 @@
   }
   .about__img {
     height: 50%;
+    background-size: contain;
+  }
+  .about {
+    height: 760px;
   }
   .proects__item {
     width: 150px;
@@ -279,15 +291,29 @@
     max-width: 310px;
   }
   .intro {
-    height: 540px;
+    height: 380px;
     margin-top: 50px;
   }
   .about__title {
-    padding-top: 0;
+    padding-top: 40;
+    margin-top: -40px;
+  }
+  .content {
+    padding: 20px 0 40px 0;
+    font-size: 18px;
+  }
+  .content p {
+    line-height: 25px;
+    text-align: left;
   }
 }
 
 @media (max-width: 413px) {
+  .content h1 {
+    font-size: 27px;
+    margin-bottom: -45px;
+    margin-top: 50px;
+  }
   .header__title img {
     width: 200px;
   }
@@ -308,6 +334,69 @@
     height: 780px;
   }
   .news {
-    height: 1160px;
+    height: 840px;
+  }
+}
+
+.vi {
+  position: relative;
+  width: 100%;
+  max-width: 1600px;
+  margin: 0px auto;
+  overflow: hidden;
+}
+
+.section-one {
+  height: 100vh;
+  max-height: 1080px;
+  position: relative;
+  width: 100%;
+}
+
+.video-wrap {
+  overflow: hidden;
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.section-one {
+  max-height: 677px;
+  top: 0;
+}
+
+@media only screen and (max-width: 1200px) {
+  .section-one {
+    max-height: 560px;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .section-one {
+    max-height: 433px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .section-one {
+    max-height: 325px;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .section-one {
+    max-height: 294px;
+    top: 60px;
+  }
+  .about {
+    margin: 40px 0px 0px 0px;
+  }
+}
+
+@media only screen and (max-width: 413px) {
+  .section-one {
+    max-height: 240px;
   }
 }

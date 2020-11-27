@@ -4,15 +4,15 @@ Template Name: Шаблон для главной
 */
 
 get_header(); ?>
-
-<section class="intro">
-	<video autoplay loop muted playsinline width="100%" height="100%">
-		<source src="<?php echo teo_get_image('rolik5.mp4') ?>" type="video/mp4">
-		<source src="<?php echo teo_get_image('rolik5.webm') ?>" type="video/webm">
-		Тег video не поддерживается вашим браузером.
-	</video>
-	<div class="intro__bottom"></div>
-</section>
+<div class="vi">
+	<section class="section-one">
+		<div class="video-wrap">
+			<video autoplay loop muted playsinline width="100%" height="100%">
+				<source src="<?php echo teo_get_image('rolik5.mp4') ?>" type="video/mp4">
+			</video>
+		</div>
+	</section>
+</div>
 <section class="about">
 	<div class="container">
 		<div class="about__title"><a href="<?php the_field("abautEstetik", 8); ?>"><?php the_field("title01", 8); ?></a></div>

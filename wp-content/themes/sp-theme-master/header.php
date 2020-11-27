@@ -19,7 +19,7 @@
 		window.onscroll = function() {
 			var scrolled = window.pageYOffset || document.documentElement.scrollTop;
 			var o = document.getElementById('sticky');
-			if (scrolled > 170) o.setAttribute('class', 'fix');
+			if (scrolled > 300) o.setAttribute('class', 'fix');
 			else o.setAttribute('class', 'not_fix');
 		}
 	</script>
